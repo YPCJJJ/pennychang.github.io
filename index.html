@@ -1,22 +1,138 @@
 <!doctype html>
 <html lang="zh-Hant">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的小網站</title>
-  <style>
-    body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans','PingFang TC','Microsoft JhengHei',sans-serif;margin:0;padding:40px;line-height:1.6}
-    .wrap{max-width:760px;margin:0 auto}
-    h1{font-size:2rem;margin-bottom:.5rem}
-    .muted{color:#666}
-    .card{padding:16px 20px;border:1px solid #eee;border-radius:12px;box-shadow:0 1px 8px rgba(0,0,0,.04);margin-top:24px}
-  </style>
-  <body>
-    <div class="wrap">
-      <h1>哈囉，世界 👋</h1>
-      <p class="muted">這是我用 GitHub Pages 建的第一個網站。</p>
-      <div class="card">
-        <p>你現在看到的檔案叫 <code>index.html</code>。只要把它改一改並存檔，網站就會自動更新。</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penny — Portfolio</title>
+  <meta name="description" content="Product Planning · UX Research · Design System · UI Design" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 標題用 Playfair Display、內文用 Inter（與截圖視覺調性接近） -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="nav-link active" href="#works">Works</a>
+        <a class="nav-link" href="#resume">Resume</a>
       </div>
+      <a class="brand" href="#">Penny.</a>
+      <div class="nav-right">
+        <a class="icon-link" href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a class="icon-link" href="mailto:hello@example.com" aria-label="Email">✉</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1 class="hero-title"><em>User insights</em>, design impact.</h1>
+    <p class="hero-subtitle">
+      Product Planning　|　User Experience Research　|　Design System　|　User Interface
+    </p>
+  </section>
+
+  <!-- Works Grid -->
+  <main id="works" class="container">
+    <div class="grid">
+      <!-- 卡片：把 href、img src、figcaption 改成你的內容 -->
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/a/1000/700" alt="Project cover" />
+          <figcaption>Allianz · Mobile Banking UX</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/b/1000/700" alt="Project cover" />
+          <figcaption>ZORIX · Crypto Exchange Redesign</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/c/1000/700" alt="Project cover" />
+          <figcaption>Trading System · UX Research</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/d/1000/700" alt="Project cover" />
+          <figcaption>UI Design Research</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/e/1000/700" alt="Project cover" />
+          <figcaption>FinTech App · Research Report</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/f/1000/700" alt="Project cover" />
+          <figcaption>E-commerce · Design System</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/g/1000/700" alt="Project cover" />
+          <figcaption>Travel SaaS · Dashboard</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/h/1000/700" alt="Project cover" />
+          <figcaption>Design System · Components</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/i/1000/700" alt="Project cover" />
+          <figcaption>Banking App · IA & Flows</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/j/1000/700" alt="Project cover" />
+          <figcaption>POS Redesign · Usability</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/k/1000/700" alt="Project cover" />
+          <figcaption>Analytics · Motion Concepts</figcaption>
+        </figure>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <figure>
+          <img src="https://picsum.photos/seed/l/1000/700" alt="Project cover" />
+          <figcaption>UX Report · Executive Summary</figcaption>
+        </figure>
+      </a>
     </div>
-  </body>
+  </main>
+
+  <!-- Resume Anchor (簡單錨點，可換成你的履歷檔或 Notion 連結) -->
+  <section id="resume" class="resume container">
+    <a class="resume-btn" href="#" target="_blank" rel="noopener">View Resume →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer container">
+    <small>Last Update 2024/03/13</small>
+  </footer>
+</body>
 </html>
