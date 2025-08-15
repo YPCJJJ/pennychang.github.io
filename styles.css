@@ -30,9 +30,29 @@ body{
   backdrop-filter:saturate(180%) blur(12px);
   border-bottom:1px solid rgba(0,0,0,.04);
 }
-.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:64px}
-.nav-left{display:flex;gap:18px;align-items:center}
-.nav-right{display:flex;gap:18px;align-items:center;justify-content: flex-end}
+
+/* 三欄：左邊、品牌、右邊，中間品牌真正置中 */
+.nav{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  height:64px;
+}
+
+.nav-left{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:flex-start; /* 左側靠左 */
+}
+
+.nav-right{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:flex-end; /* 右側靠右 */
+}
+
 .nav-link{color:var(--link);text-decoration:none;font-weight:500;opacity:.7}
 .nav-link.active,.nav-link:hover{opacity:1}
 .brand{
