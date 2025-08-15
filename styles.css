@@ -21,7 +21,7 @@ body{
 }
 
 /* Layout */
-.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.container{max-width:var(--container);margin:0 auto;padding:0 0px}
 
 /* Header */
 .site-header{
