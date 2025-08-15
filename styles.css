@@ -62,7 +62,7 @@ body{
 
 .card{
   display:block;position:relative;border-radius:0px;overflow:hidden;
-  background:#f4f4f5;border:1px solid var(--border);
+  background:#f4f4f5;border:0px solid var(--border);
   text-decoration:none;color:inherit;
 }
 .card figure{margin:0;position:relative}
