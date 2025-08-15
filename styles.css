@@ -61,7 +61,7 @@ body{
 @media (min-width:1040px){.grid{grid-template-columns:repeat(3,1fr)}}
 
 .card{
-  display:block;position:relative;border-radius:12px;overflow:hidden;
+  display:block;position:relative;border-radius:0px;overflow:hidden;
   background:#f4f4f5;border:1px solid var(--border);
   text-decoration:none;color:inherit;
 }
