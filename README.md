@@ -1,4 +1,4 @@
-# Penny — Portfolio
+# PennyChang's Portfolio
 
-一個個人作品集網站，展示 UX / UI 設計專案與研究案例。  
+個人作品集網站，展示設計專案與UX研究案例。  
 
