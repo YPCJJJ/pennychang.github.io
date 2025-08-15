@@ -110,3 +110,45 @@ body{
 
 /* Footer */
 .site-footer{text-align:center;color:var(--muted);padding:40px 0 60px;font-size:12px}
+
+
+/* === FORCE OVERRIDES: 貼在 CSS 最底部 === */
+
+/* 1) 任何卡片與其內部元素，全數取消圓角/遮罩/裁切 */
+.card,
+.card * {
+  border-radius: 0 !important;
+  clip-path: none !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+
+/* 2) 取消作品牆的縫隙（含 row/column gap 與可能的外距/邊框） */
+.grid {
+  gap: 0 !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+}
+.grid > * {
+  margin: 0 !important;
+  border: 0 !important;       /* 卡片邊框常造成細縫，如需邊框可拿掉這行 */
+}
+
+/* 3) 圖片無縫貼合（避免 sub-pixel 白線） */
+.card figure { margin: 0 !important; line-height: 0 !important; }
+.card img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* 4) 容器左右也貼齊，避免兩側留白造成“看起來有 gap” */
+.container { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* 5) 若有共用變數在控制圓角（以防萬一），一併歸零 */
+:root {
+  --radius: 0px;
+  --card-radius: 0px;
+}
+
